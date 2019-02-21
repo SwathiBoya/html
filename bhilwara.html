@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {
-    margin:0;
-    height: 100%;
-    width:100%;
-}
+	<title></title>
+	<style>
+		html, body {
+        	height: 100%;
+        	margin: 0px;
+    	}
+				div#container {
+		    padding:11px;
+		    background:#cbae6d;
+		    display: flex;
+		    height: 10%;
 
-.div1{
-        height: 10%;
-        background: #e3d6ac;
-    }
-    .logoright{
-        width: 20%;
-        float: left;
-        overflow: hidden;
-    }
-    .logoleft{
-        width: 80%;
-        overflow: hidden;
-        text-align: center;
-        font-size: 45px;
-        color: #4a3d24;
-    }
-    .div2{
-        background-color: #d43232;
-        color: white;
-        font-size: 50px;
-        height: 10%;
-        text-align: center;
-}
+		}
+		div#container2 {
+		    padding:20px;
+		    display: flex;
+		    height: 10%;
+
+		}
+
+		.leftDiv {
+		    width:20%;
+		    padding:0px;
+		    margin-left: 10px;
+		}
+		.rightDiv {
+		    width:80%;
+		    padding:10px;
+		    margin-left: 10px;
+		}
+		.welcomDiv{
+			width:100%;
+		    padding:10px;
+		    margin-left: 10px;
+		}
 .mySlides {display:none;}
-.slides{
-    height: 70%;
-}
 .footerDiv {
-  width: 100%;
-  margin: 0 auto;
-  height: 10%;
+			padding:11px;
+		    background:#cbae6d;
+		    display: flex;
+		    height: 10%;
 }
 .block1 {
   width: 15%;
   text-align: center;
   float: left;
   background-color: #e3d6ac;
+
+    border-right: 1px solid;
 }
 .block2 {
   width: 70%;
   text-align: center;
   float: left;
   background-color: #e3d6ac;
+  border-right: 1px solid;
   }
 .block3 {
   width: 15%;
@@ -60,22 +64,29 @@ body {
   float: left;
   background-color: #e3d6ac;
 }
-</style>
+	</style>
 </head>
 <body>
-        <div class="div1">
-        <div class="logoright">
-            <img src="bilwara.png" style="width: 40px; margin: 6px 23px 0px 23px;">
-        </div>
-        <div class="logoleft">
-            BHILWARA INFOTECH
-        </div>
-        </div>
-        <div class="div2">
-            Welcome To Bhilwara Infotech
-        </div>
-      
-        <div class="slides">
+<div id="container">
+  <div class="leftDiv">
+    <img src="logo.jpg" style="width: 50%;">
+  </div>
+  <div class="rightDiv">
+    <h1 style="text-align: center; margin: 0px;display: block;color: #fff;">
+   Bhilwara Infotech
+    </h1>
+  </div>
+</div>
+
+<div id="container2">
+     <div class="welcomDiv">
+	    <h1 style="text-align: center; margin: 0px;display: block; color: red">
+	   Welcome To Bhilwara Infotech
+	    </h1>
+  </div>
+</div>
+
+<div class="slides">
                 <img class="mySlides" src="images/slide1.jpg" style="width:100%">
                 <img class="mySlides" src="images/slide2.jpg" style="width:100%">
                 <img class="mySlides" src="images/slide3.jpg" style="width:100%">
@@ -97,7 +108,7 @@ body {
                         e-mail: info@bhilwarainfo.com</p>
                 </div>
                 <div class="block3">
-                    <p>Fax Number:<br> +1 323 555 1234</p>
+                    <p>Fax Number:+1 323 555 1234</p>
                 </div>
         </div>
 
@@ -117,6 +128,5 @@ body {
                   setTimeout(carousel, 2000); // Change image every 2 seconds
                 }
                 </script>
-
 </body>
-</html> 
+</html>
